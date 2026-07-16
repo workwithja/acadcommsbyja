@@ -3,10 +3,23 @@
 import { useState } from "react";
 
 const faqs = [
-  {
-    question: "Are you available?",
-    answer: "Please check my current status before inquiring.",
-  },
+{
+  question: "Are you available?",
+  answer: (
+    <>
+      Please check my{" "}
+      <a
+        href="https://google.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ color: "red", fontWeight: "bold", textDecoration: "underline" }}
+      >
+        Status
+      </a>{" "}
+      before inquiring.
+    </>
+  ),
+},
   {
     question: "How do I order?",
     answer: "Complete the Order Form and wait for your quotation.",
@@ -120,10 +133,9 @@ export default function FAQ() {
                 >
                   <div className="overflow-hidden">
                     <div className="border-t border-blue-50 px-6 pb-5 pt-4">
-                      <p className="whitespace-pre-line text-sm leading-relaxed text-slate-600">
-                        {faq.answer}
-                      </p>
-                    </div>
+                      <div className="whitespace-pre-line text-sm leading-relaxed text-slate-600">
+  {faq.answer}
+</div>
                   </div>
                 </div>
               </div>

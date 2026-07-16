@@ -2,30 +2,12 @@
 
 import { ReactNode, useState } from "react";
 
-<<<<<<< HEAD
-const faqs = [
-{
-  question: "Are you available?",
-  answer: (
-    <>
-      Please check my{" "}
-      <a
-        href="https://google.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ color: "red", fontWeight: "bold", textDecoration: "underline" }}
-      >
-        Status
-      </a>{" "}
-      before inquiring.
-    </>
-  ),
-},
-=======
-const faqs: {
+type FAQItem = {
   question: string;
   answer: ReactNode;
-}[] = [
+};
+
+const faqs: FAQItem[] = [
   {
     question: "Are you available?",
     answer: (
@@ -43,8 +25,6 @@ const faqs: {
       </>
     ),
   },
-
->>>>>>> be6bf54 (Update FAQ links and CTA)
   {
     question: "How do I order?",
     answer: (
@@ -62,7 +42,6 @@ const faqs: {
       </>
     ),
   },
-
   {
     question: "Where can I see samples?",
     answer: (
@@ -80,13 +59,11 @@ const faqs: {
       </>
     ),
   },
-
   {
     question: "Can you guarantee a specific grade?",
     answer:
       "While quality work is always prioritized, final grades depend on your instructor's evaluation and other academic factors.",
   },
-
   {
     question: "Do you offer revisions?",
     answer: (
@@ -104,7 +81,6 @@ const faqs: {
       </>
     ),
   },
-
   {
     question: "Where can I view feedbacks?",
     answer: (
@@ -122,33 +98,33 @@ const faqs: {
       </>
     ),
   },
-
   {
     question: "Can you accept tasks not listed in the pricelist?",
     answer: "Yes. Feel free to inquire.",
   },
-
   {
     question: "Can I pay a 50% down payment?",
     answer:
       "Yes. The remaining balance must be settled before file release.",
   },
-
   {
     question: "Do you accept rush tasks?",
     answer: "Yes, subject to availability and corresponding rush fees.",
   },
-
   {
     question: "What payment methods do you accept?",
-    answer: "• GCash\n• Load (additional ₱20 processing fee)",
+    answer: (
+      <>
+        • GCash
+        <br />
+        • Load (additional ₱20 processing fee)
+      </>
+    ),
   },
-
   {
     question: "Can I cancel after payment?",
     answer: "Payments are generally non-refundable once work has started.",
   },
-
   {
     question: "Do you provide plagiarism reports?",
     answer:
@@ -166,15 +142,11 @@ export default function FAQ() {
           <span className="rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700">
             FAQ
           </span>
-<<<<<<< HEAD
+
           <h2 className="mt-6 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-            THIS IS THE CORRECT FAQ
+            Frequently Asked Questions
           </h2>
-=======
-          <h2 className="text-center text-red-600 font-bold">
-  Frequently Asked Questions
-</h2>
->>>>>>> be6bf54 (Update FAQ links and CTA)
+
           <p className="mt-4 text-lg text-slate-600">
             Everything you need to know before placing an order.
           </p>
@@ -198,6 +170,7 @@ export default function FAQ() {
                   <span className="font-semibold text-slate-900">
                     {faq.question}
                   </span>
+
                   <span
                     className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-50 text-blue-600 transition-transform duration-300 ${
                       isOpen ? "rotate-180" : ""
@@ -207,13 +180,13 @@ export default function FAQ() {
                       className="h-4 w-4"
                       fill="none"
                       viewBox="0 0 24 24"
-                      strokeWidth={2}
                       stroke="currentColor"
+                      strokeWidth={2}
                     >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                        d="M19.5 8.25 12 15.75 4.5 8.25"
                       />
                     </svg>
                   </span>
@@ -227,14 +200,9 @@ export default function FAQ() {
                   <div className="overflow-hidden">
                     <div className="border-t border-blue-50 px-6 pb-5 pt-4">
                       <div className="whitespace-pre-line text-sm leading-relaxed text-slate-600">
-<<<<<<< HEAD
-  {faq.answer}
-</div>
-=======
                         {faq.answer}
                       </div>
                     </div>
->>>>>>> be6bf54 (Update FAQ links and CTA)
                   </div>
                 </div>
               </div>

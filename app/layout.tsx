@@ -49,8 +49,8 @@ export const metadata: Metadata = {
     "rrs",
     "chapter 2",
     "chapter 3",
-    "research topic ideas"
-    "research service",
+    "research topic ideas",
+    "research pagawa",
     "pagawa",
     "assignment help",
     "essay help",
@@ -108,10 +108,13 @@ export const metadata: Metadata = {
   },
 
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
-  },
+  icon: [
+    { url: "/favicon.ico" },
+    { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+  ],
+  apple: "/apple-touch-icon.png",
+},
 };
 
 export default function RootLayout({

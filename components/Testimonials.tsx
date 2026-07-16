@@ -1,36 +1,36 @@
-const testimonials = [
+const feedbacks = [
   {
-    name: "Angela R.",
+    name: "Joshua G.",
     initial: "A",
     review:
       "Thank you for doing my conceptual framework. Ang galing ng pagkakagawa, no AI, and mabilis pa. Budget friendly din. Thank you again!",
   },
   {
-    name: "Maria S.",
+    name: "Jae H.",
     initial: "M",
     review:
       "Thank you for my theoretical framework at such a great price. I definitely recommend you and babalik ulit ako.",
   },
   {
-    name: "John D.",
+    name: "Patrick G.",
     initial: "J",
     review:
       "Thank you so much! We had so many ideas but couldn't construct proper research titles. You were such a lifesaver.",
   },
   {
-    name: "Carlo M.",
+    name: "Anne B.",
     initial: "C",
     review:
       "Thank you for doing my RRL. Ang bilis niyo gumawa. Big help sa akin since busy rin sa work.",
   },
   {
-    name: "Hannah T.",
+    name: "Maria T.",
     initial: "H",
     review:
       "Very life saver! Hindi ko talaga alam paano sisimulan yung research. 100% babalikan ko talaga.",
   },
   {
-    name: "Sophia A.",
+    name: "Trisha B.",
     initial: "S",
     review:
       "Thank you so much! Laking tulong niyo sa amin. Sa inyo lang talaga kami may tiwala pagdating sa academic papers.",
@@ -54,42 +54,42 @@ function StarRating() {
   );
 }
 
-export default function Testimonials() {
+export default function Feedbacks() {
   return (
     <section className="bg-slate-50 py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700">
-            Testimonials
+            Feedbacks
           </span>
           <h2 className="mt-6 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-            Trusted by Students
-          </h2>
+  What Our Clients Say
+</h2>
           <p className="mt-4 text-lg text-slate-600">
             Real feedback from students who trusted Academic Commission by JA.
           </p>
         </div>
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {testimonials.map((testimonial) => (
+          {feedbacks.map((feedbacks) => (
             <div
-              key={testimonial.name}
+              key={feedbacks.name}
               className="flex flex-col rounded-2xl border border-blue-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
               <div className="flex items-center gap-4">
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-blue-700 text-lg font-bold text-white">
-                  {testimonial.initial}
+                  {feedbacks.initial}
                 </div>
                 <div>
                   <p className="font-semibold text-slate-900">
-                    {testimonial.name}
+                    {feedbacks.name}
                   </p>
                   <StarRating />
                 </div>
               </div>
 
               <p className="mt-5 flex-1 text-sm leading-relaxed text-slate-600">
-                &ldquo;{testimonial.review}&rdquo;
+                &ldquo;{feedbacks.review}&rdquo;
               </p>
             </div>
           ))}

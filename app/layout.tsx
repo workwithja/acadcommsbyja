@@ -16,104 +16,136 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://acadcommsbyja-black.vercel.app"),
 
   title: {
-    default: "Academic Commission by Ja",
-    template: "%s | Academic Commission by Ja",
+    default: "Academic Commission by JA",
+    template: "%s | Academic Commission by JA",
   },
 
   description:
-    "Academic Commission by Ja provides trusted academic writing, research assistance, thesis support, PowerPoint presentations, essays, case studies, and other academic services for Filipino students.",
+    "Academic Commission by JA provides trusted academic writing, research assistance, thesis support, PowerPoint presentations, essays, case studies, editing, and other academic services for Filipino students. Quality Work. On Time. Every Time.",
+
+  applicationName: "Academic Commission by JA",
 
   keywords: [
-    "Academic Commission by Ja",
-    "Academic Services",
-    "Research Assistance",
-    "Thesis Writing",
-    "Research Paper",
-    "Essay Writing",
-    "PowerPoint Presentation",
-    "Case Study",
+    "Academic Commission by JA",
+    "Academic Services Philippines",
     "Academic Writing",
-    "College Students",
-    "Philippines",
+    "Research Assistance",
+    "Research Paper",
+    "Research Title",
+    "Research Proposal",
+    "RRL",
+    "RRS",
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Thesis Assistance",
+    "Essay Writing",
+    "Reflection Paper",
+    "Reaction Paper",
+    "Position Paper",
+    "Case Study",
+    "PowerPoint Presentation",
+    "Infographic",
+    "Poster Design",
+    "Proofreading",
+    "Grammar Checking",
+    "Formatting",
+    "College Students Philippines",
     "Academic Help",
-    "research title",
-    "research title ideas",
-    "research title about coffee shop",
-    "background of the study",
-    "statement of the problem",
-    "significance of the study",
-    "scope and delimitation",
-    "definition of terms",
-    "rrl",
-    "how to make rrl",
-    "rrs",
-    "chapter 2",
-    "chapter 3",
-    "research topic ideas",
-    "research pagawa",
-    "pagawa",
-    "assignment help",
-    "essay help",
-    "academic commission",
-    "research ai tool",
-    "research defense",
-    "research websites to use",
-    "schoolwork",
-    "thesis assistant services",
-    "thesis title ideas",
-    "thesis commission",
-    "thesis defense",
-    "thesis defense tips",
+    "School Requirements",
+    "Pagawa Assignment",
+    "Pagawa Research",
+    "Research Defense",
+    "Research Statistics",
+    "Academic Commission",
     "acadcommsbyja",
   ],
 
   authors: [
     {
-      name: "Academic Commission by Ja",
+      name: "Academic Commission by JA",
+      url: "https://acadcommsbyja-black.vercel.app",
     },
   ],
 
-  creator: "Academic Commission by Ja",
-  publisher: "Academic Commission by Ja",
+  creator: "Academic Commission by JA",
+  publisher: "Academic Commission by JA",
+
+  category: "Education",
 
   robots: {
     index: true,
     follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+      "max-snippet": -1,
+    },
+  },
+
+  alternates: {
+    canonical: "https://acadcommsbyja-black.vercel.app",
   },
 
   openGraph: {
-    title: "Academic Commission by Ja",
+    title: "Academic Commission by JA",
     description:
       "Premium academic writing and research services delivered with precision, integrity, and on-time results.",
+
     url: "https://acadcommsbyja-black.vercel.app",
-    siteName: "Academic Commission by Ja",
+
+    siteName: "Academic Commission by JA",
+
     locale: "en_PH",
+
     type: "website",
+
     images: [
       {
         url: "/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Academic Commission by Ja",
+        alt: "Academic Commission by JA",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Academic Commission by Ja",
+    title: "Academic Commission by JA",
     description:
       "Premium academic writing and research services delivered with precision, integrity, and on-time results.",
     images: ["/logo.jpg"],
+    creator: "@acadcommsbyja",
   },
 
   icons: {
-  icon: [
-    { url: "/favicon.ico" },
-    { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-    { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-  ],
-  apple: "/apple-touch-icon.png",
+    icon: [
+      {
+        url: "/favicon.ico",
+      },
+      {
+        url: "/favicon-32x32.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+      {
+        url: "/favicon-16x16.png",
+        sizes: "16x16",
+        type: "image/png",
+      },
+    ],
+
+    apple: "/apple-touch-icon.png",
+  },
+
+  verification: {
+  google: "--DSaw5uTl1aN1QEVHIhQZ5rVKIKQxf1P3INcfozdxw",
 },
 };
 
@@ -124,10 +156,10 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      lang="en-PH"
+      className={`${geistSans.variable} ${geistMono.variable} h-full scroll-smooth antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-screen bg-white text-slate-900">
         {children}
       </body>
     </html>

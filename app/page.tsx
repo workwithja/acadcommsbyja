@@ -1,6 +1,7 @@
 import { ORDER_FORM_URL } from "@/lib/constants";
 import Navbar from "@/components/Navbar";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import About from "@/components/About";
 import Services from "@/components/Services";
 import HowItWorks from "@/components/HowItWorks";
 import Testimonials from "@/components/Testimonials";
@@ -50,6 +51,7 @@ export default function Home() {
         </section>
 
         {/* Homepage Sections */}
+        <About />
         <WhyChooseUs />
         <Services />
         <HowItWorks />

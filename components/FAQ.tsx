@@ -199,7 +199,7 @@ export default function FAQ() {
                 >
                   <div className="overflow-hidden">
                     <div className="border-t border-blue-50 px-6 pb-5 pt-4">
-                      <div className="whitespace-pre-line text-sm leading-relaxed text-slate-600">
+<div className="whitespace-pre-line text-sm leading-relaxed text-slate-600">
                         {faq.answer}
                       </div>
                     </div>

@@ -1,85 +1,220 @@
+import {
+  ClipboardList,
+  MessagesSquare,
+  CreditCard,
+  SearchCheck,
+  FolderCheck,
+  BadgeCheck,
+  ShieldCheck,
+  Clock3,
+  Workflow,
+} from "lucide-react";
+
 const steps = [
   {
-    step: 1,
-    icon: "📩",
-    title: "Submit Your Request",
+    number: "01",
+    icon: ClipboardList,
+    title: "Order Submission Form",
     description:
-      "Fill out the order form and provide your requirements.",
+      "Complete the Order Submission Form by providing your requirements, deadline, preferred communication platform, and supporting files. This allows us to review your request accurately before accepting your commission.",
+    button: "Open Order Form",
+    link: "https://forms.gle/zkBAB9NCjGtvmiSF7",
   },
+
   {
-    step: 2,
-    icon: "💬",
-    title: "Receive a Quote",
+    number: "02",
+    icon: MessagesSquare,
+    title: "Review & Confirmation",
     description:
-      "We'll review your request and send you the price and timeline.",
+      "We'll contact you through your preferred communication platform to confirm your request, discuss the quotation, estimated turnaround time, and answer any questions before proceeding.",
   },
+
   {
-    step: 3,
-    icon: "🛠️",
-    title: "Work in Progress",
+    number: "03",
+    icon: CreditCard,
+    title: "Payment Confirmation Form",
     description:
-      "Our team starts working while keeping you updated.",
+      "After approving the quotation, complete the required payment and submit your proof of payment through our Payment Confirmation Form. Once verified, your commission will be assigned a unique Task Code and officially recorded in our system.",
+    button: "Open Payment Form",
+    link: "https://forms.gle/Lm6jvEnSGCJTen4C8",
   },
+
   {
-    step: 4,
-    icon: "✅",
-    title: "Receive Your Files",
+    number: "04",
+    icon: SearchCheck,
+    title: "Order Tracking System",
     description:
-      "Download your completed work before the deadline.",
+      "Track your commission anytime using our Telegram Order Tracking System. Simply enter your Task Code to monitor your order status—even when we're temporarily offline.",
+    button: "Track My Order",
+    link: "https://t.me/acadcommsbyja_bot",
+  },
+
+  {
+    number: "05",
+    icon: FolderCheck,
+    title: "Preview & Final Delivery",
+    description:
+      "Once your commission is completed, you'll receive a preview for final checking. After the remaining balance has been settled (if applicable), your completed editable files will be released immediately.",
   },
 ];
 
-export default function HowItWorks() {
+const benefits = [
+  {
+    icon: Workflow,
+    title: "Fast & Organized",
+    description:
+      "Every commission is securely recorded and managed from submission to final delivery.",
+  },
+
+  {
+    icon: BadgeCheck,
+    title: "Real-Time Tracking",
+    description:
+      "Monitor your commission anytime using your Task Code through our Order Tracking System.",
+  },
+
+  {
+    icon: ShieldCheck,
+    title: "Secure & Transparent",
+    description:
+      "Requirements, payments, and project updates are organized in one centralized workflow.",
+  },
+
+  {
+    icon: Clock3,
+    title: "Works Even When We're Offline",
+    description:
+      "Orders and payment confirmations submitted through our online forms are automatically recorded and queued for processing.",
+  },
+];
+
+export default function Process() {
   return (
-    <section id="how-it-works" className="bg-white py-20 sm:py-24">
+    <section
+      id="how-it-works"
+      className="bg-white py-20 sm:py-24"
+    >
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mx-auto max-w-2xl text-center">
+
+        <div className="mx-auto max-w-3xl text-center">
+
           <span className="rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700">
             Process
           </span>
+
           <h2 className="mt-6 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-            How It Works
+            Our Commission Process
           </h2>
-          <p className="mt-4 text-lg text-slate-600">
-            Getting academic assistance has never been easier.
+
+          <p className="mt-4 text-lg leading-8 text-slate-600">
+            A simple, transparent, and organized workflow designed to keep every
+            commission secure, trackable, and hassle-free from inquiry to final
+            delivery.
           </p>
+
         </div>
 
-        <div className="relative mt-16">
-          {/* Desktop timeline connector */}
-          <div className="absolute left-0 right-0 top-8 hidden h-0.5 bg-gradient-to-r from-blue-200 via-blue-400 to-blue-600 lg:block" />
+        <div className="mt-16 space-y-8">
 
-          <div className="grid gap-8 lg:grid-cols-4 lg:gap-6">
-            {steps.map((item, index) => (
-              <div key={item.title} className="relative flex lg:flex-col lg:items-center">
-                {/* Mobile timeline connector */}
-                {index < steps.length - 1 && (
-                  <div className="absolute left-6 top-16 h-[calc(100%-2rem)] w-0.5 bg-gradient-to-b from-blue-400 to-blue-200 lg:hidden" />
-                )}
+          {steps.map((step) => {
+            const Icon = step.icon;
 
-                {/* Step number badge */}
-                <div className="relative z-10 flex shrink-0 items-start gap-4 lg:flex-col lg:items-center lg:gap-0">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-blue-700 text-sm font-bold text-white shadow-md shadow-blue-600/30 ring-4 ring-white lg:mb-6">
-                    {item.step}
+            return (
+              <div
+                key={step.number}
+                className="rounded-3xl border border-blue-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              >
+                <div className="flex flex-col gap-6 md:flex-row md:items-start">
+
+                  <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-blue-50">
+                    <Icon
+                      size={30}
+                      className="text-[#487DB2]"
+                    />
                   </div>
 
-                  {/* Card */}
-                  <div className="flex-1 rounded-2xl border border-blue-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg lg:mt-0 lg:text-center">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-2xl lg:mx-auto">
-                      {item.icon}
-                    </div>
-                    <h3 className="mt-4 text-lg font-semibold text-slate-900">
-                      {item.title}
+                  <div className="flex-1">
+
+                    <div className="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-sm font-semibold text-[#487DB2]">
+  {step.number}
+</div>
+
+                    <h3 className="mt-2 text-2xl font-bold text-slate-900">
+                      {step.title}
                     </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                      {item.description}
+
+                    <p className="mt-4 leading-8 text-slate-600">
+                      {step.description}
                     </p>
+
+                    {step.button && (
+                      <a
+                        href={step.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-6 inline-flex rounded-xl bg-[#487DB2] px-6 py-3 font-semibold text-white transition hover:opacity-90"
+                      >
+                        {step.button}
+                      </a>
+                    )}
+
                   </div>
+
                 </div>
               </div>
-            ))}
+            );
+          })}
+                  </div>
+
+        <div className="mt-20">
+
+          <div className="text-center">
+
+            <span className="rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700">
+              Why Choose Our System
+            </span>
+
+            <h2 className="mt-6 text-3xl font-bold tracking-tight text-slate-900">
+              Built for a Better Client Experience
+            </h2>
+
           </div>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
+
+            {benefits.map((benefit) => {
+              const Icon = benefit.icon;
+
+              return (
+                <div
+                  key={benefit.title}
+                  className="group rounded-3xl border border-blue-100 bg-slate-50 p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[#487DB2] hover:bg-white hover:shadow-lg"
+                >
+                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 transition group-hover:bg-[#487DB2]">
+
+                    <Icon
+                      size={28}
+                      className="text-[#487DB2] group-hover:text-white"
+                    />
+
+                  </div>
+
+                  <h3 className="mt-6 text-xl font-bold text-slate-900">
+                    {benefit.title}
+                  </h3>
+
+                  <p className="mt-3 leading-7 text-slate-600">
+                    {benefit.description}
+                  </p>
+
+                </div>
+              );
+            })}
+
+          </div>
+
         </div>
+
       </div>
     </section>
   );

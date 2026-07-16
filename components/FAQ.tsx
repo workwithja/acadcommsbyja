@@ -67,7 +67,7 @@ export default function FAQ() {
             FAQ
           </span>
           <h2 className="mt-6 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-            Frequently Asked Questions
+            THIS IS THE CORRECT FAQ
           </h2>
           <p className="mt-4 text-lg text-slate-600">
             Everything you need to know before placing an order.

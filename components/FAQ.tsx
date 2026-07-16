@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 
+<<<<<<< HEAD
 const faqs = [
 {
   question: "Are you available?",
@@ -20,48 +21,134 @@ const faqs = [
     </>
   ),
 },
+=======
+const faqs: {
+  question: string;
+  answer: ReactNode;
+}[] = [
+  {
+    question: "Are you available?",
+    answer: (
+      <>
+        Please check my{" "}
+        <a
+          href="https://t.me/acadcommsby_ja/19"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-blue-600 underline hover:text-blue-800"
+        >
+          Status
+        </a>{" "}
+        before inquiring.
+      </>
+    ),
+  },
+
+>>>>>>> be6bf54 (Update FAQ links and CTA)
   {
     question: "How do I order?",
-    answer: "Complete the Order Form and wait for your quotation.",
+    answer: (
+      <>
+        Complete the{" "}
+        <a
+          href="https://t.me/acadcommsby_ja/10?comment=1385"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-blue-600 underline hover:text-blue-800"
+        >
+          Order Form
+        </a>{" "}
+        and wait for your quotation.
+      </>
+    ),
   },
+
   {
     question: "Where can I see samples?",
-    answer: "Please refer to the Samples section.",
+    answer: (
+      <>
+        Please refer to the{" "}
+        <a
+          href="https://t.me/acadcommsby_ja/17"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-blue-600 underline hover:text-blue-800"
+        >
+          Samples
+        </a>
+        .
+      </>
+    ),
   },
+
   {
     question: "Can you guarantee a specific grade?",
     answer:
       "While quality work is always prioritized, final grades depend on your instructor's evaluation and other academic factors.",
   },
+
   {
     question: "Do you offer revisions?",
-    answer: "Yes. Kindly review the Revision Policy section.",
+    answer: (
+      <>
+        Yes. Kindly review the{" "}
+        <a
+          href="https://t.me/acadcommsby_ja/15?comment=1477"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-blue-600 underline hover:text-blue-800"
+        >
+          Revision Policy
+        </a>
+        .
+      </>
+    ),
   },
+
   {
     question: "Where can I view feedbacks?",
-    answer: "Please refer to the Testimonials section.",
+    answer: (
+      <>
+        Please refer to the{" "}
+        <a
+          href="https://t.me/acadcommsby_ja/14"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-blue-600 underline hover:text-blue-800"
+        >
+          Feedbacks
+        </a>
+        .
+      </>
+    ),
   },
+
   {
     question: "Can you accept tasks not listed in the pricelist?",
     answer: "Yes. Feel free to inquire.",
   },
+
   {
     question: "Can I pay a 50% down payment?",
     answer:
       "Yes. The remaining balance must be settled before file release.",
   },
+
   {
     question: "Do you accept rush tasks?",
     answer: "Yes, subject to availability and corresponding rush fees.",
   },
+
   {
     question: "What payment methods do you accept?",
     answer: "• GCash\n• Load (additional ₱20 processing fee)",
   },
+
   {
     question: "Can I cancel after payment?",
     answer: "Payments are generally non-refundable once work has started.",
   },
+
   {
     question: "Do you provide plagiarism reports?",
     answer:
@@ -79,9 +166,15 @@ export default function FAQ() {
           <span className="rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700">
             FAQ
           </span>
+<<<<<<< HEAD
           <h2 className="mt-6 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
             THIS IS THE CORRECT FAQ
           </h2>
+=======
+          <h2 className="text-center text-red-600 font-bold">
+  Frequently Asked Questions
+</h2>
+>>>>>>> be6bf54 (Update FAQ links and CTA)
           <p className="mt-4 text-lg text-slate-600">
             Everything you need to know before placing an order.
           </p>
@@ -134,8 +227,14 @@ export default function FAQ() {
                   <div className="overflow-hidden">
                     <div className="border-t border-blue-50 px-6 pb-5 pt-4">
                       <div className="whitespace-pre-line text-sm leading-relaxed text-slate-600">
+<<<<<<< HEAD
   {faq.answer}
 </div>
+=======
+                        {faq.answer}
+                      </div>
+                    </div>
+>>>>>>> be6bf54 (Update FAQ links and CTA)
                   </div>
                 </div>
               </div>

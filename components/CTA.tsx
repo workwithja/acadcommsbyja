@@ -13,7 +13,7 @@ export default function CTA() {
   
             <p className="mx-auto mt-6 max-w-2xl text-lg text-blue-100">
               Whether it's research, thesis, presentations, essays, or other
-              academic requirements, Academic Commission by JA is here to help
+              academic requirements, Academic Commission by Ja is here to help
               you submit quality work on time.
             </p>
   

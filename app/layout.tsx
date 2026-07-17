@@ -13,20 +13,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://acadcommsbyja-black.vercel.app"),
+  metadataBase: new URL("https://academiccommission.vercel.app"),
 
   title: {
-    default: "Academic Commission by JA",
-    template: "%s | Academic Commission by JA",
+    default: "Academic Commission by Ja",
+    template: "%s | Academic Commission by Ja",
   },
 
   description:
-    "Academic Commission by JA provides trusted academic writing, research assistance, thesis support, PowerPoint presentations, essays, case studies, editing, and other academic services for Filipino students. Quality Work. On Time. Every Time.",
+    "Academic Commission by Ja provides trusted academic writing, research assistance, thesis support, PowerPoint presentations, essays, case studies, editing, and other academic services for Filipino students. Quality Work. On Time. Every Time.",
 
-  applicationName: "Academic Commission by JA",
+  applicationName: "Academic Commission by Ja",
 
   keywords: [
-    "Academic Commission by JA",
+    "Academic Commission by Ja",
     "Academic Services Philippines",
     "Academic Writing",
     "Research Assistance",
@@ -65,13 +65,13 @@ export const metadata: Metadata = {
 
   authors: [
     {
-      name: "Academic Commission by JA",
-      url: "https://acadcommsbyja-black.vercel.app",
+      name: "Academic Commission by Ja",
+      url: "https://academiccommission.vercel.app",
     },
   ],
 
-  creator: "Academic Commission by JA",
-  publisher: "Academic Commission by JA",
+  creator: "Academic Commission by Ja",
+  publisher: "Academic Commission by Ja",
 
   category: "Education",
 
@@ -89,17 +89,17 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://acadcommsbyja-black.vercel.app",
+    canonical: "https://academiccommission.vercel.app",
   },
 
   openGraph: {
-    title: "Academic Commission by JA",
+    title: "Academic Commission by Ja",
     description:
       "Premium academic writing and research services delivered with precision, integrity, and on-time results.",
 
-    url: "https://acadcommsbyja-black.vercel.app",
+    url: "https://academiccommission.vercel.app",
 
-    siteName: "Academic Commission by JA",
+    siteName: "Academic Commission by Ja",
 
     locale: "en_PH",
 
@@ -110,14 +110,14 @@ export const metadata: Metadata = {
         url: "/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Academic Commission by JA",
+        alt: "Academic Commission by Ja",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Academic Commission by JA",
+    title: "Academic Commission by Ja",
     description:
       "Premium academic writing and research services delivered with precision, integrity, and on-time results.",
     images: ["/logo.jpg"],
